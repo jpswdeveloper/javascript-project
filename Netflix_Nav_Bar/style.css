@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;1,100;1,300;1,500&family=Roboto:ital,wght@0,100;0,300;1,400&display=swap');
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    list-style: none;
+}
+body{
+    background-image: linear-gradient(to top,white 0%,white 50%,black 50%,black 100%);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    position: relative;
+}
+
+.content{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.close{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width: 60px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    overflow: hidden;
+}
+.close:focus{
+    outline: none;
+}
+.close .uil{
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+.uil:focus{
+outline: none;
+}
+
+nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    max-width: 400px;
+    height: 100vh;
+    min-width: 300px;
+    left: 0;
+    z-index: 999;
+    transform: translateX(0%);
+    transition: transform .7s ease-in;
+    transition-delay: .2s;
+    overflow: hidden;
+}
+/* nav.vissible{
+    transform: translateX(0%);
+} */
+nav .navBlack{
+    width: 90%;
+    height: 100%;
+    background-color: rgb(49, 24, 24);
+    overflow: hidden;
+    transition-delay: .3s;
+}
+nav .navRed{
+   width: 10%;
+   height: 100%;
+    background-color: yellow;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition-delay: .5s;
+}
+.navRed1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+}
+nav .navWhite{
+    width: 95%;
+    height: 100%;
+     background-color: rgb(101, 218, 218);
+     overflow: hidden;
+     transition-delay: .5s;
+ }
+ .imageHolder1{
+     width: 100px;
+     height: 100px;
+     overflow: hidden;
+ }
+ .imageHolder1 img{
+    width: 100%;
+    object-fit: cover;
+ }
+ ul{
+     display: flex;
+     flex-direction: column;
+     padding: 20px;
+ }
+ ul li{
+     padding: 10px;
+     font-weight:400;
+     font-size: 20px;
+ }

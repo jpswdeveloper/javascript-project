@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  min-width: 100vw;
+  overflow: hidden;
+
+}
+.container{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.left{
+    background-image: url('images/merry.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: width .5s ease-in-out;
+}
+.left h3{
+    font-size: 40px;
+    color: white;
+    white-space: nowrap;
+}
+.left .btn{
+    width: 150px;
+    height: 50px;
+    border: none;
+    margin-top: 20px;
+    border-radius:10px;
+    font-size: 20px;
+    transition: transform .5s ease;
+}
+.left .btn:hover{
+    background-color: teal;
+    color: white;
+    transform: scale(1.1);
+}
+.right{
+    background-image: url('images/like.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: width .8s ease-in-out;
+}.right h3{
+    font-size: 40px;
+    color: teal;
+}
+.right .btn{
+    width: 150px;
+    height: 50px;
+    border: none;
+    margin-top: 20px;
+    border-radius:10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform .5s ease;
+}
+.right .btn:hover{
+    background-color: teal;
+    color: white;
+    transform: scale(1.1);
+}
+
+.btn:focus{
+    outline: none;
+}
+/* add black light on both div */
+
+/* .right::before , .left::before{
+    content: '';
+    background-color: rgba(27, 4, 4, 0.493);
+    width: 100vw;
+    height: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+/* Add javascript property to it */
+.container.leftSwiper .left{
+    width: 75%;
+}
+.container.leftSwiper .right{
+    width: 25%;
+}
+.container.rightSwiper .right{
+    width: 75%;
+}.container.rightSwiper .left{
+    width: 25%;
+}
